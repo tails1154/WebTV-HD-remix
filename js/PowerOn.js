@@ -10,6 +10,7 @@ function getDialingTheme(){
   if (a === 1) {
     dialingMusic.src = "audio/music/other/aoltv.mp3";
     dialingMusic.load();
+    alert("secret music");
   }
 }
 window.addEventListener("load", getDialingTheme);
@@ -74,31 +75,34 @@ function initDialing(){
         Progress bar values are defined from 0 to 100, counting by tens.
         The example provided mimmics a box with a Tellyscript. */
     var progressBarMessages = [
-      { message: "Dialing WebTV", interval: 20, value: 11 },
-      { message: "Waiting for answer", interval: 40, value: 43 },
-      { message: "WebTV answering", interval: 100, value: 60 },
-      { message: "Connecting", interval: 120, value: 90 },
-      { message: "Connecting to WebTV", interval: 140, value: 100 }
+      { message: "Deleting Brainrot", interval: 20, value: 11 },
+      { message: "Why is the progressbar at -43?", interval: 40, value: -43 },
+      { message: "hahaha", interval: 100, value: 60 },
+      { message: "Not Deleting Files", interval: 120, value: 90 },
+      { message: "Connecting to WebTV", interval: 140, value: 1 },
+      { message: "I am totally updating right now leave me alone", interval: 141, value: 1},
+      { message: "I am totally updating right now leave me alone", interval: 143, value: 2},
+      { message: "I am totally updating right now leave me alone", interval: 151, value: 3},
+      { message: "I am totally updating right now leave me alone", interval: 160, value: 4},
+      { message: "Are you bored of staring at this yet?", interval: 170, value: 40},
+      { message: "Checking if my ebay package has came in yet", interval: 200, value: 50},
+      { message: ":)", interval: 230, value: 60},
+      { message: "oops I broke the progress bar", interval: 300, value: 500},
+      { message: "Actually, No", interval: 350, value: 0},
+      { message: "What do you mean by  'Progressbar95?'", interval: 400, value: 50},
+      { message: "Okay you can connect now", interval: 600, value: 1000}
     ];
     progressBarMessages.forEach((details) => {
       if (value == details.interval) {
         progressBar.value = details.value;
         progressMessage.textContent = details.message;
-        if (details.value >= 100) doSplash(5000);
+        if (details.value >= 1000) doSplash(5000);
       }
     });
   }, 2000);
 }
 
 function skipDialing(){
-  stopProgressUpdates = true;
-  document.getElementById('progressbar-message').textContent = 'ultimatetv reference';
-  document.getElementById('progressbar').value = 100;
-  document.getElementById('dialing-music').pause();
-  document.getElementById('skipDialing').remove();
-  doSplash();
+//  stopProgressUpdates = true;
+  alert("nope");
 }
-
-document.addEventListener('DOMContentLoaded', function(){
-  focus(document.getElementById('skipDialing'));
-});
