@@ -10,7 +10,7 @@ function getDialingTheme(){
   if (a === 1) {
     dialingMusic.src = "audio/music/other/aoltv.mp3";
     dialingMusic.load();
-    alert("secret music");
+    showAlert("secret music");
   }
 }
 window.addEventListener("load", getDialingTheme);
@@ -104,5 +104,5 @@ function initDialing(){
 
 function skipDialing(){
 //  stopProgressUpdates = true;
-  alert("nope");
+  showAlert("lol no you have to wait for this");
 }

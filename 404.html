@@ -26,9 +26,9 @@
       document.body.style.opacity = 1;
       var newContent = document.createElement('div');
       newContent.innerHTML = String.raw `
-        <audio id=1 src=https://skcro.github.io/WebTV-HD/audio/asbestos.mp3 preload=auto></audio>
-        <audio id=errorSound src=https://skcro.github.io/WebTV-HD/audio/error.mp3 preload=auto></audio>
-        <audio id=submitSound src=https://skcro.github.io/WebTV-HD/audio/submitClick.mp3 preload=auto></audio>
+        <audio id=1 src=/audio/asbestos.mp3 preload=auto></audio>
+        <audio id=errorSound src=/audio/error.mp3 preload=auto></audio>
+        <audio id=submitSound src=/audio/submitClick.mp3 preload=auto></audio>
         <div id=selectionbox></div>
         <div class=smoke></div>`;
       document.body.appendChild(newContent);
