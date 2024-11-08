@@ -49,6 +49,7 @@ async function powerOn(){
 }
 
 function initDialing(){
+  doSplash()
   var hiddenUntilLogo = document.querySelector(".hiddenUntilLogo");
   var logoArea = document.querySelector(".logoArea");
   var dialingMusic = document.getElementById("dialing-music");
@@ -69,6 +70,8 @@ function initDialing(){
       clearInterval(interval);
       return;
     }
+  skipDialing()
+  doSplash()
     value += 10;
     /*  Progress bar messages. For first message, see Dialing.html
         When setting these messages, set an interval value for when they should occur.
@@ -103,6 +106,8 @@ function initDialing(){
 }
 
 function skipDialing(){
-//  stopProgressUpdates = true;
+  stopProgressUpdates = true;
   showAlert("lol no you have to wait for this");
+  doSplash()
 }
+//skipDialing()
