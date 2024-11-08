@@ -1,4 +1,9 @@
 # WebTV HD
+
+# Credit to skcro for the original project! :D
+
+
+
 ![WebTV HD logo](https://skcro.github.io/WebTV-HD/Logo.svg)
 
 <sub>Previously known as "WebTV-CSS-Remake".</sub>
